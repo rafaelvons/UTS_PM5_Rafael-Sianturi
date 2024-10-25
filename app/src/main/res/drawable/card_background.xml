@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <solid android:color="@color/ungujanda" /> <!-- Ganti dengan warna yang diinginkan -->
+    <solid android:color="@color/surface" />
 
-    <corners android:radius="20dp" /> <!-- Ganti nilai radius sesuai kebutuhan untuk sudut melengkung -->
+    <corners android:radius="20dp" />
 
 
 </shape>

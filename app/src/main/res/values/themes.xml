@@ -4,6 +4,12 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
+    <style name="Theme.App" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnBackground">#E8F5E9</item>
+        <item name="colorSurface">#F5F5F5</item>
+        <item name="colorOnSurface">#000000</item>
+    </style>
     <style name="Theme.QuizLUNG" parent="Base.Theme.QuizLUNG" />
 </resources>

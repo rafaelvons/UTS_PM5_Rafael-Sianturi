@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompSciActivity"
+    android:background="@color/background">
+
+    <!-- Keterangan Soal -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Soal Computer Science"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"/>
+
+    <!-- ScrollView untuk menampung soal -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintBottom_toTopOf="@id/submitButton"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Soal 1 -->
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Apa yang dilakukan oleh algoritma Bubble Sort?"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+            
+            <RadioGroup
+                android:id="@+id/answers1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Mengurutkan data dengan cara membandingkan dan menukar elemen yang berdekatan" />
+
+                <RadioButton
+                    android:id="@+id/option1B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Mencari elemen terbesar dalam sebuah array" />
+
+                <RadioButton
+                    android:id="@+id/option1C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Menghapus elemen ganda dalam sebuah array" />
+
+                <RadioButton
+                    android:id="@+id/option1D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Menghitung jumlah elemen dalam sebuah array" />
+            </RadioGroup>
+
+            <!-- Soal 2 -->
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Struktur data yang paling efisien untuk LIFO (Last In First Out) adalah?"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/option2A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Array" />
+                <RadioButton android:id="@+id/option2B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Stack" />
+                <RadioButton android:id="@+id/option2C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Queue" />
+                <RadioButton android:id="@+id/option2D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Linked List" />
+            </RadioGroup>
+
+            <!-- Soal 3 -->
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Apa perbedaan antara kompiler dan interpreter?"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option3A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Keduanya menerjemahkan kode secara bersamaan" />
+
+                <RadioButton
+                    android:id="@+id/option3B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Kompiler hanya digunakan untuk bahasa tingkat rendah, interpreter untuk tingkat tinggi" />
+
+                <RadioButton
+                    android:id="@+id/option3C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Kompiler menerjemahkan seluruh kode sekaligus, sedangkan interpreter menerjemahkan baris per baris" />
+
+                <RadioButton
+                    android:id="@+id/option3D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Interpreter lebih cepat dibandingkan kompiler" />
+            </RadioGroup>
+
+            <!-- Soal 4 -->
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Apa yang dimaksud dengan Big Data?"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option4A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Jenis data yang hanya berupa angka besar" />
+
+                <RadioButton
+                    android:id="@+id/option4B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Data kompleks dan besar yang sulit diproses dengan metode tradisional" />
+
+                <RadioButton
+                    android:id="@+id/option4C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Kumpulan data rahasia" />
+
+                <RadioButton
+                    android:id="@+id/option4D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Data kecil namun penting" />
+            </RadioGroup>
+
+            <!-- Soal 5 -->
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5) Salah satu algoritma untuk menemukan jalur terpendek dalam graf adalah?"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option5A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Prim's Algorithm" />
+
+                <RadioButton
+                    android:id="@+id/option5B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Kruskal's Algorithm" />
+
+                <RadioButton
+                    android:id="@+id/option5C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Djikstra's Algorithm" />
+
+                <RadioButton
+                    android:id="@+id/option5D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Bellman-Ford Algorithm" />
+            </RadioGroup>
+
+            <!-- Soal 6 -->
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Ubah 65 to binary"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option6A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) 01100001" />
+
+                <RadioButton
+                    android:id="@+id/option6B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) 01000001" />
+
+                <RadioButton
+                    android:id="@+id/option6C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) 00100001" />
+
+                <RadioButton
+                    android:id="@+id/option6D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) 00100101" />
+            </RadioGroup>
+
+            <!-- Soal 7 -->
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7) Apa yang dilakukan algoritma Breadth-First Search (BFS)?"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option7A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Mencari jalur terpendek dalam graf berbobot" />
+
+                <RadioButton
+                    android:id="@+id/option7B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Menyelesaikan traversal dari node secara bertingkat" />
+
+                <RadioButton
+                    android:id="@+id/option7C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Menyusun graf menjadi pohon biner" />
+
+                <RadioButton
+                    android:id="@+id/option7D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Memeriksa semua kemungkinan jalur sekaligus" />
+            </RadioGroup>
+
+            <!-- Soal 8 -->
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8) Apa definisi Polimorfisme dalam OOP?"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option8A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Objek bisa memiliki lebih dari satu bentukn" />
+
+                <RadioButton
+                    android:id="@+id/option8B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Pewarisan dari beberapa kelas induk" />
+
+                <RadioButton
+                    android:id="@+id/option8C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Enkapsulasi data dalam satu objek" />
+
+                <RadioButton
+                    android:id="@+id/option8D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Deklarasi variabel tanpa tipe" />
+            </RadioGroup>
+
+            <!-- Soal 9 -->
+            <TextView
+                android:id="@+id/question9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9) Apa fungsi utama dari cache pada prosesor?"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option9A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A)  Menyimpan data sementara dari RAM" />
+
+                <RadioButton
+                    android:id="@+id/option9B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Menghubungkan prosesor dengan hard drive" />
+
+                <RadioButton
+                    android:id="@+id/option9C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Meningkatkan kecepatan akses data yang sering digunakan" />
+
+                <RadioButton
+                    android:id="@+id/option9D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Memproses semua instruksi program" />
+            </RadioGroup>
+
+            <!-- Soal 10 -->
+            <TextView
+                android:id="@+id/question10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10) Perangkat apa yang bertindak sebagai titik akses bagi perangkat untuk terhubung ke jaringan?"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/answers10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option10A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Router" />
+
+                <RadioButton
+                    android:id="@+id/option10B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Switch" />
+
+                <RadioButton
+                    android:id="@+id/option10C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Access Point" />
+
+                <RadioButton
+                    android:id="@+id/option10D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Hub" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tombol Submit -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
+        android:text="Submit Answers"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
