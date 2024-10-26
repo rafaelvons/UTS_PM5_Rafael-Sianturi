@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">QuizLUNG</string>
+    <string name="app_name">QuizzLUNG</string>
+    <string name="welcome_text">Hi, Paul</string>
+    <string name="computer_science">Computer Science</string>
+    <string name="social_knowledge">Social Knowledge</string>
+    <string name="nature_science">Nature Science</string>
+    <string name="ten_questions">10 Questions</string>
+    <string name="fifteen_questions">15 Questions</string>
+    <string name="description_text">Computer Science Test</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="close_button">Close</string>
+    <string name="trophy_image">Trophy Icon</string>
+    <string name="congratulations">Congrats!</string>
+    <string name="score">%d Score</string>
+    <string name="quiz_completed">Quiz completed successfully.</string>
+    <string name="attempt_details">
+        You attempted 10 questions\nand answered 8 correctly.
+    </string>
+
 </resources>
