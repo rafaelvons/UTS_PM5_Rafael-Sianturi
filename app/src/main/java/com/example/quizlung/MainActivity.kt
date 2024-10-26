@@ -23,5 +23,17 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, CompSciActivity::class.java)
             startActivity(intent)
         }
+
+        val socKnow: CardView = findViewById(R.id.cvSocKnow)
+        socKnow.setOnClickListener {
+            val intent = Intent(this@MainActivity, SocknowActivity::class.java)
+            startActivity(intent)
+        }
+
+        val natSci: CardView = findViewById(R.id.cvNatSci)
+        natSci.setOnClickListener {
+            val intent = Intent(this@MainActivity, NatScienceActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

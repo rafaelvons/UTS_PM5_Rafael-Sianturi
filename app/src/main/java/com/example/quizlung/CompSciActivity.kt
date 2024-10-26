@@ -36,6 +36,20 @@ class CompSciActivity : AppCompatActivity() {
 
     private val correctAnswers = intArrayOf(0, 1, 2, 0, 2, 1, 0, 0, 2, 0)
 
+    private fun showExitConfirmationDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Konfirmasi Keluar")
+        builder.setMessage("Apakah Anda yakin ingin keluar?")
+        builder.setPositiveButton("Ya") { _, _ ->
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        builder.setNegativeButton("Tidak") { dialog, _ -> dialog.dismiss() }
+        val dialog = builder.create()
+        dialog.show()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comp_sci)
@@ -85,30 +99,18 @@ class CompSciActivity : AppCompatActivity() {
                 }
             }
 
-            // Kirim skor ke ScoreActivity
+          
             val intent = Intent(this, ScoreActivity::class.java)
             intent.putExtra("SCORE", score)
             startActivity(intent)
         }
 
-        // Mengatur tombol close
-        val closeScore: ImageView = findViewById(R.id.btnClose)
-        closeScore.setOnClickListener {
-            showExitConfirmationDialog() // Menampilkan dialog konfirmasi
+
+        val closeQuiz: ImageView = findViewById(R.id.btnClose)
+        closeQuiz.setOnClickListener {
+            showExitConfirmationDialog()
         }
     }
 
-    private fun showExitConfirmationDialog() {
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Konfirmasi Keluar")
-        builder.setMessage("Apakah Anda yakin ingin keluar?")
-        builder.setPositiveButton("Ya") { _, _ ->
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-        builder.setNegativeButton("Tidak") { dialog, _ -> dialog.dismiss() }
-        val dialog = builder.create()
-        dialog.show()
-    }
+
 }

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".CompSciActivity">
+    tools:context=".SocknowActivity">
 
     <ImageView
         android:id="@+id/btnClose"
@@ -21,7 +21,7 @@
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/computer_science"
+        android:text="@string/social_knowledge"
         android:textAlignment="center"
         android:layout_marginTop="25dp"
         style="@style/Text.Title"

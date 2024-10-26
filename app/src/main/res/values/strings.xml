@@ -5,8 +5,6 @@
     <string name="social_knowledge">Social Knowledge</string>
     <string name="nature_science">Nature Science</string>
     <string name="ten_questions">10 Questions</string>
-    <string name="fifteen_questions">15 Questions</string>
-    <string name="description_text">Computer Science Test</string>
     <string name="submit_button_text">Submit</string>
     <string name="close_button">Close</string>
     <string name="trophy_image">Trophy Icon</string>
