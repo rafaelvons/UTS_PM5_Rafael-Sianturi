@@ -23,6 +23,7 @@
     <LinearLayout
         android:id="@+id/contentLayout"
         android:layout_width="0dp"
+        android:backgroundTint="?attr/colorSurface"
         android:layout_height="wrap_content"
         android:background="@drawable/card_background"
         android:gravity="center"
