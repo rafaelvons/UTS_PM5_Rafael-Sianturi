@@ -22,7 +22,7 @@ Berikut adalah beberapa screenshot dari aplikasi ini:
 
 
 ## APK Release
-APK dari aplikasi ini dapat diunduh dari 
+APK dari aplikasi ini dapat diunduh dari [Quizzlung](https://github.com/rafaelvons/UTS_PM5_Rafael-Sianturi/releases/tag/v1.0.0)
 
 ## Kredit
 - [Ikon] dari [FlatIcon](flaticon.com).
