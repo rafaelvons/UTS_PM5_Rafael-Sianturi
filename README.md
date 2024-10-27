@@ -12,12 +12,13 @@ QuizzLUNG merupakan aplikasi kuis interaktif yang bertujuan untuk menguji penget
 ## Screenshots/Video
 Berikut adalah beberapa screenshot dari aplikasi ini:
 
-![Screenshot_20241027_194838](https://github.com/user-attachments/assets/d68ccdcf-e567-4fcc-a44e-1bb1cfbfc5df)
-![Screenshot_20241027_194905](https://github.com/user-attachments/assets/9b0861a3-e83e-4a11-a145-67e586cf43c8)
-![Screenshot_20241027_194914](https://github.com/user-attachments/assets/0f037634-25f4-4c3e-899e-3d43425c6464)
-![Screenshot_20241027_195001](https://github.com/user-attachments/assets/8ae2ae84-c498-49f1-8268-df2893067d96)
-![Screenshot_20241027_195014](https://github.com/user-attachments/assets/cea73be4-4b0e-41ef-a7bc-5098be794cd8)
-![Screenshot_20241027_195044](https://github.com/user-attachments/assets/4df3f369-66ae-4a5b-889e-a041bb8f80dd)
+<img src="https://github.com/user-attachments/assets/d68ccdcf-e567-4fcc-a44e-1bb1cfbfc5df" alt="Screenshot 1" width="300"/>  
+<img src="https://github.com/user-attachments/assets/9b0861a3-e83e-4a11-a145-67e586cf43c8" alt="Screenshot 2" width="300"/>  
+<img src="https://github.com/user-attachments/assets/0f037634-25f4-4c3e-899e-3d43425c6464" alt="Screenshot 3" width="300"/>  
+<img src="https://github.com/user-attachments/assets/8ae2ae84-c498-49f1-8268-df2893067d96" alt="Screenshot 4" width="300"/>  
+<img src="https://github.com/user-attachments/assets/cea73be4-4b0e-41ef-a7bc-5098be794cd8" alt="Screenshot 5" width="300"/>  
+<img src="https://github.com/user-attachments/assets/4df3f369-66ae-4a5b-889e-a041bb8f80dd" alt="Screenshot 6" width="300"/>  
+
 
 
 ## APK Release
